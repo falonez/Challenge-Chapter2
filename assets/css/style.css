@@ -260,19 +260,12 @@
 
 /* FAQ Section  */
 .faq-section{
-    padding: 100px 136px 0 136px;
+    padding: 60px 16px 0 16px;
 }
 
 .faq-section h1{
     font-weight: 700 !important;
-}
-
-.text-content{
-    width: 50%;
-}
-
-.accordion-content{
-    width: 50%;
+    font-size: 24px;
 }
 
 .accordion-item{
@@ -396,6 +389,10 @@ footer{
         font-size: 36px;
     }
 
-    
+    /*FAQ Section*/
+    .faq-section{
+        padding: 100px 136px 0 136px;
+    }
+
 
 }
