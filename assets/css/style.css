@@ -15,8 +15,9 @@
 
 .navbar{
     padding: 0;
-    /* margin: 24px 16px 0px 0px; */
-    margin: 25px 136px 0px 136px;
+    /*destop*/
+    /*padding: 20px 136px 20px 136px;*/
+    padding: 24px 16px;
     font-size: 14px;
 }
 
@@ -27,6 +28,10 @@
 .navbar .navbar-nav a:hover{
     color: #cccccc;
 }
+.nav-color{
+    background-color: #F1F3FF;
+    transition: all ease-in-out 0.3s;
+}
 
 .navbar-brand{
     background-color: #0D28A6;
@@ -34,8 +39,41 @@
     height: 34px;
 }
 
-.nav-link{
+.navbar-nav .nav-link{
     margin-right: 32px;
+}
+
+.fi-menu{
+    background-image: url("../img/fi_menu.png");
+    /*height: 100%;*/
+    padding: 10px 10px;
+    border: none;
+}
+
+.offcanvas-header{
+    margin-top: 23px;
+}
+
+.offcanvas-title{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.offcanvas-body{
+    padding-top: 0;
+}
+
+.offcanvas-body a{
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+/*Mengatur width offCanvas*/
+.offcanvas-end {
+    width: 50%;
 }
 
 
@@ -43,9 +81,9 @@
 
 .hero-section{
     padding: 90px 16px 0px 16px;
-    margin-top: -64px;
+    /*margin-top: -64px;*/
     width: auto;
-    height: 657px;
+    /*height: 657px;*/
     background-color: #F1F3FF;
 }
 
@@ -53,19 +91,20 @@
 .item-hero{
     padding-right: 0px;
 }
+
 .item-hero h1{
     font-weight: 700;
     font-size: 36px;
     line-height: 54px;
 }
 
-
+.hero-section img{
+    margin-top: 24px;
+}
 
 
 /* Our Section */
 .our-section{
-    /*note Aneh 30px*/
-    /* padding bottom 0 karena jarak antar section di atur di section berikutnya */
     padding: 60px 30px 0px 30px;
 }
 
@@ -73,6 +112,10 @@
     margin: 0 0px 20px -34px;
     list-style: none;
     font-size: 14px;
+}
+
+.our-section .img-service{
+    padding: 24px;
 }
 
 .text-our-content li>img{
@@ -114,10 +157,8 @@
 }
 
 .card{
-    width: 268px;
     height: 196px;
     padding: 24px;
-    /*tambahkan mobile*/
     margin: 6px 16px;
 }
 
@@ -327,6 +368,11 @@ footer{
 
 @media screen and (min-width:994px) {
 
+    /*Navbar*/
+    .navbar{
+        padding: 20px 136px 20px 136px;
+    }
+
     /*Hero Section*/
     .item-hero{
         width: 50%;
@@ -405,5 +451,14 @@ footer{
     /*Footer*/
     footer{
         padding: 150px 136px 100px 136px;
+    }
+
+    .hero-section img{
+        margin-top: 24px;
+        margin-left: 15px;
+    }
+
+    .our-section .img-service{
+        padding: 0px;
     }
 }
